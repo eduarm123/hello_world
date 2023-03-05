@@ -26,6 +26,7 @@ void app_main(void)
            (chip_info.features & CHIP_FEATURE_BT) ? "/BT" : "",
            (chip_info.features & CHIP_FEATURE_BLE) ? "/BLE" : "");
 
+printf("maricon");
     unsigned major_rev = chip_info.revision / 100;
     unsigned minor_rev = chip_info.revision % 100;
     printf("silicon revision v%d.%d, ", major_rev, minor_rev);
